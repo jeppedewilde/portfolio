@@ -1,1 +1,1 @@
-&copy; Portfolio website van Jeppe de Wilde
+&copy; Jeppe de Wilde
