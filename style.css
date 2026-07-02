@@ -1,0 +1,8 @@
+/* MARK: Fonts Inladen */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap');
+
+/* MARK: Modulaire CSS Inladen */
+@import url('css/global.css');
+@import url('css/bento.css');
+@import url('css/home.css');
+@import url('css/subpages.css');

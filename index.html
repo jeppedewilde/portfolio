@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeppe de Wilde | Portfolio</title>
+    
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    
+    <script src="script.js" defer></script>
+</head>
+
+<body class="home-locked">
+
+    <main>
+        <div class="bento-grid home-grid">
+
+            <div class="bento-tile col-span-2 row-span-2 intro-tile">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="content-wrapper">
+                    <h1 id="hero-naam">Jeppe de Wilde</h1>
+                    <p>Enthousiaste creatieveling met een sterke drive zichzelf te ontwikkelen</p>
+                </div>
+            </div>
+
+            <a href="projecten.html" class="bento-tile col-span-2 tile-link accent-bg"
+                aria-label="Bekijk mijn projecten">
+                <div class="tile-content">
+                    <h2>Projecten</h2>
+                    <p>Drie uitgebreide UX/UI cases</p>
+                </div>
+                <span class="arrow">&rarr;</span>
+            </a>
+
+            <a href="playground.html" class="bento-tile col-span-1 tile-link" aria-label="Bekijk mijn experimenten">
+                <div class="tile-content">
+                    <h2>Expo</h2>
+                    <p>Meer van mijn werk</p>
+                </div>
+                <span class="arrow">&rarr;</span>
+            </a>
+
+            <div class="bento-tile col-span-1 nav-tile">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="projecten.html">Projecten</a></li>
+                    <li><a href="playground.html">Expo</a></li>
+                    <li><a href="over-mij.html">Over Mij</a></li>
+                </ul>
+            </div>
+
+            <a href="over-mij.html" class="bento-tile col-span-3 tile-link"
+                aria-label="Lees meer over mij en bekijk mijn CV">
+                <div class="tile-content">
+                    <h2>Over Mij & CV</h2>
+                    <p>Mijn profiel, skills & werkervaring</p>
+                </div>
+                <span class="arrow">&rarr;</span>
+            </a>
+
+            <div class="bento-tile col-span-1 selfie-tile">
+                <img src="assets/jeppe-1.png" alt="Jeppe de Wilde selfie" class="selfie-img" />
+            </div>
+
+            <div class="bento-tile col-span-4 marquee-tile">
+                <div class="marquee-content">
+                    <span class="ticker-text">HTML • CSS • Javascript • View Transitions API • Accessibility (WCAG) •
+                        VoiceOver • WebSockets • Component-Driven • GSAP • Progressive Enhancement • Grid & Subgrid •
+                        SplitText • API • JSON • Teamwork •</span>
+                    <span class="ticker-text" aria-hidden="true">HTML • CSS • Javascript • View Transitions API •
+                        Accessibility (WCAG) • VoiceOver • WebSockets • Component-Driven • GSAP • Progressive
+                        Enhancement • Grid & Subgrid • SplitText • API • JSON • Teamwork •</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

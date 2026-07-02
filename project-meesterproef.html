@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(Inter)Play | Project | Jeppe de Wilde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="page-container project-detail">
+
+    <a href="projecten.html" class="back-link">&larr; Terug naar Projecten</a>
+
+    <header class="project-header bento-tile">
+      <h1>(Inter)Play - Interactieve animatie tool</h1>
+      <p class="intro">Een web-based tool waarmee ontwerpers zonder code-kennis parameters kunnen aanpassen om unieke
+        typografische animaties te genereren.</p>
+      <div class="tags">
+        <span class="tag">UX/UI Designer</span>
+        <span class="tag">Front-end Developer</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JS</span>
+        <span class="tag">GSAP</span>
+      </div>
+    </header>
+
+    <article class="project-content">
+
+      <figure>
+        <video src="assets/video-animatie-tool.mp4" autoplay loop muted playsinline
+          style="width: 100%; border-radius: 16px; border: 1px solid var(--border-color);"></video>
+        <figcaption>Interface van de (Inter)Play tool, waarmee gebruikers generatieve typografische animaties kunnen
+          maken.</figcaption>
+      </figure>
+
+      <h2>De Opdracht</h2>
+      <p>Voor het ontwerponderzoek <em>(Inter)facing the hybrid city</em> van onderzoeker Marjolijn Ruyg kregen wij de
+        uitdaging om een generatieve animatie tool te ontwerpen en bouwen.</p>
+      <p>Het onderzoek draait om de fysieke en digitale lagen van de hedendaagse stad, uitgedrukt in 50 abstracte
+        kernbegrippen. Het probleem was dat er nog geen toegankelijke manier was om deze begrippen typografisch te
+        animeren en te testen. Onze oplossing is een web-based tool waarmee ontwerpers—volledig zonder
+        code-kennis—parameters kunnen aanpassen om zo unieke, interactieve typografische animaties te genereren.</p>
+
+      <h2>Mijn Rol in het Team</h2>
+      <p>Binnen ons team van vijf werkte ik als UX/UI Designer en Web Developer. Mijn focus lag specifiek op de
+        <strong>brug tussen interactie en interface</strong>.</p>
+      <p>Ik was verantwoordelijk voor het logisch en schaalbaar koppelen van de onderliggende code aan de visuele
+        interface. Daarnaast heb ik mij sterk gericht op het verbeteren van de gebruikerservaring door middel van
+        doordachte micro-interacties en gevestigde UX-principes.</p>
+
+      <hr class="divider">
+
+      <h2>Voorbeelden</h2>
+
+      <h3>1. User Control & Freedom</h3>
+      <p>De tool nodigt uit tot <em>trial-and-error</em> met vele sliders en instellingen. Ik wilde voorkomen dat
+        gebruikers gefrustreerd raken als een complexe animatie vastloopt of als ze het overzicht kwijtraken.</p>
+
+      <blockquote>
+        <strong>UX Inzicht:</strong> Om de veiligheid te bieden om vrij te experimenteren, heb ik een 'Reset Canvas' en
+        een 'Delete Property' functionaliteit gebouwd. Gebruikers weten hierdoor dat ze altijd makkelijk een stap terug
+        kunnen doen.
+      </blockquote>
+
+      <figure>
+        <video src="assets/video-reset-canvas.mp4" autoplay loop muted playsinline
+          style="width: 100%; border-radius: 16px; border: 1px solid var(--border-color);"></video>
+        <figcaption>De 'Reset Canvas' functie geeft de gebruiker direct de controle terug bij vastgelopen of ongewenste
+          animaties.</figcaption>
+      </figure>
+
+      <h3>2. Micro-interacties</h3>
+      <p>Om de tool intuïtiever en professioneler te laten aanvoelen, heb ik subtiele micro-interacties ontworpen en
+        gebouwd. Het zijn de kleine details die zorgen voor een vloeiende gebruikerservaring.</p>
+
+      <div class="image-grid">
+        <figure>
+          <video src="assets/video-details.mp4" autoplay loop muted playsinline
+            style="width: 100%; border-radius: 16px; border: 1px solid var(--border-color);"></video>
+          <figcaption>Vloeiende transities bij het in- en uitklappen van de menu's, zodat de interface rustig oogt.
+          </figcaption>
+        </figure>
+        <figure>
+          <video src="assets/video-delete-property.mp4" autoplay loop muted playsinline
+            style="width: 100%; border-radius: 16px; border: 1px solid var(--border-color);"></video>
+          <figcaption>Kleine visuele feedback bij het verwijderen van een specifieke animatie-property.</figcaption>
+        </figure>
+      </div>
+
+      <h3>3. GSAP SplitText Integratie</h3>
+      <p>Om de typografische animaties echt tot leven te wekken, heb ik gewerkt aan de complexe integratie van GSAP
+        SplitText.</p>
+      <p>Dit was een cruciale technische toevoeging voor de UX van de tool. Het stelt de interface in staat om statische
+        tekst op te breken en te manipuleren op woord- of zelfs letterniveau (zoals schalen, roteren en positioneren).
+        Dit geeft de gebruiker maximale creatieve vrijheid om dynamische animaties te maken.</p>
+
+      <figure>
+        <video src="assets/video-splittext.mp4" autoplay loop muted playsinline
+          style="width: 100%; border-radius: 16px; border: 1px solid var(--border-color);"></video>
+        <figcaption>De SplitText integratie in actie: letters en woorden kunnen individueel gemanipuleerd en geanimeerd
+          worden via de UI-sliders.</figcaption>
+      </figure>
+
+    </article>
+  </main>
+
+</body>
+
+</html>

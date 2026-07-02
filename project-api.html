@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The One With The Quiz | Project | Jeppe de Wilde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-container project-detail">
+
+        <a href="projecten.html" class="back-link">&larr; Terug naar Projecten</a>
+
+        <header class="project-header bento-tile">
+            <h1>The One With The Quiz</h1>
+            <p class="intro">Een real-time, dual-screen multiplayer ervaring gebaseerd op de serie 'Friends'.</p>
+            <div class="tags">
+                <span class="tag">UX/UI Designer</span>
+                <span class="tag">Full stack Developer</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+                <span class="tag">API</span>
+                <span class="tag">Web Sockets</span>
+            </div>
+        </header>
+
+        <article class="project-content">
+
+            <figure>
+                <img src="assets/api-host-lobby.png" alt="Hero image van de lobby"
+                    style="min-height: 300px; background-color: var(--card-bg-2);">
+                <figcaption>De interactieve lobby van The One With The Quiz.</figcaption>
+            </figure>
+
+            <h2>De Opdracht</h2>
+            <p>Voor het vak API kreeg ik de opdracht om een server-side rendered webapplicatie te ontwerpen en bouwen
+                met het framework Astro. In de webapplicatie moest ik gebruikmaken van minimaal 2 web API’s en 1 content
+                API. Ik koos ervoor om een real-time, dual-screen multiplayer quiz over de serie ‘Friends’ te maken.</p>
+
+            <hr class="divider">
+
+            <h2>Mijn Aanpak</h2>
+            <p>Omdat ik dit project solo uitvoerde, was ik verantwoordelijk voor de volledige cyclus: van het uitdenken
+                van de user flows en het ontwerpen van de interface, tot het schrijven van de logica. Daarbij stonden de
+                volgende vijf UX/UI-principes centraal:</p>
+
+            <h3>1. Context-Aware UI (Dual-Screen Experience)</h3>
+            <p>Ik ontwierp een gescheiden dual-screen experience, omdat de context van de gebruiker per scherm
+                verschilt. Het host-scherm (vaak getoond op een grotere monitor) is ontworpen voor overzicht en passieve
+                consumptie: grote typografie, duidelijke leaderboards en de nadruk op de huidige vraag.</p>
+            <p>De speler-interface (smartphone) is daarentegen ontworpen als een 'controller'. Hier is alle afleiding
+                geminimaliseerd en ligt de focus volledig op grote, duidelijke knoppen om de cognitieve belasting
+                tijdens de tijdsdruk te verlagen.</p>
+
+            <figure>
+                <img src="assets/api-dual-screen.png"
+                    alt="Mockup met laptop en smartphone, beide schermen tijdens een vraag"
+                    style="min-height: 300px; background-color: var(--card-bg-2);">
+                <figcaption>De gescheiden interface: een groot overzichtsscherm voor de host en een gefocuste
+                    'controller' voor de spelers op smartphone.</figcaption>
+            </figure>
+
+            <h3>2. Visibility of System Status (Real-time Feedback)</h3>
+            <p>Waar traditionele web-apps vaak vereisen dat een gebruiker de pagina ververst of wacht op een laadscherm,
+                heb ik door middel van WebSockets gezorgd voor <em>instant visual feedback</em>.</p>
+            <p>Zodra de host een vraag start of de tijd om is, veranderen de statussen op de schermen van alle spelers
+                synchroon (zoals het rood of groen kleuren van het telefoonscherm wanneer de uitslag van een vraag
+                bekend is). De speler is hierdoor op elk moment, zonder vertraging, op de hoogte van de status van het
+                systeem.</p>
+
+            <h3>3. Forgiving UI (Error Prevention)</h3>
+            <p>Een goede gebruikerservaring straft de gebruiker niet af voor kleine menselijke foutjes of onzichtbare
+                systeembeperkingen. Voor de open vragen schreef ik een stuk forgiving input handling (via de
+                <code>.trim()</code> en <code>.toLowerCase()</code> methodes in JavaScript).</p>
+            <p>Hierdoor wordt een antwoord als " &nbsp; 3 &nbsp; " achter de schermen netjes gelezen als "3". Dit
+                voorkomt dat een antwoord onterecht fout wordt gerekend en zorgt daarmee voor een veel betere en
+                vloeiendere gebruikerservaring.</p>
+
+            <h3>4. Edge Cases & Error Recovery</h3>
+            <p>Bij een multiplayer game kunnen er altijd onverwachte dingen gebeuren. Ik heb de user journey ontworpen
+                met edge cases in gedachten. Wat als twee mensen dezelfde naam kiezen in de lobby?</p>
+            <p>Het systeem crasht niet, maar geeft direct contextuele feedback in de UI, zodat de speler zelfstandig de
+                fout kan herstellen ("Kies een andere naam").</p>
+
+            <figure>
+                <img src="assets/api-player-foutmelding.png" alt="Foutmelding in de UI: kies een andere naam"
+                    style="min-height: 200px; background-color: var(--card-bg-2);">
+                <figcaption>Contextuele feedback die de gebruiker helpt om direct te herstellen van een fout (Error
+                    Recovery).</figcaption>
+            </figure>
+
+            <h3>5. Emotional Design</h3>
+            <p>Mensen leren, spelen en navigeren beter in een omgeving die ze plezier geeft (het <em>Aesthetic-Usability
+                    Effect</em>). Ik heb emotional design toegevoegd door het Friends-thema in elk detail door te voeren
+                in de UI. Denk aan typografie, kleuren en het beroemde Friends-fotolijstje. De consequente doorvoering
+                van dit thema maakt de applicatie memorabel en sfeervol.</p>
+
+        </article>
+    </main>
+
+</body>
+
+</html>
